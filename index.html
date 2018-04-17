@@ -17,13 +17,12 @@ diye başlamalısın<!DOCTYPE html>
     
     
     
-      document.write("<table border='3'><tr>");
-        
-        var sonuc=document.getelementıd("hesapla")
-      hesapbtn.onclick=hesap
+    <script>hesapBtn=document.getElementById("hesapla"); 
+hesapBtn.onclick=function(){ sayi=document.getElementById("sayi").value; 
+.sayi=Number(sayi);
     
     function hesap{
-     for (var i=sonuc;i<=10;i++)
+     for (var i=sayi;i<=10;i++)
         document.write("<td>");
         for(var a=1;i<=10;a++)
         document.write(a+"x" + i + "=" + a * i + "
@@ -31,8 +30,7 @@ diye başlamalısın<!DOCTYPE html>
         document.write("</td>");
         document.write("</tr></table>;
        }
- prumpt input type=text name=deger value=i
-  input type=button  name=deger value=click
+ 
     
     
     <div class="clearfix"></div>
